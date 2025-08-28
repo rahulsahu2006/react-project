@@ -1,0 +1,38 @@
+.wrapper{
+    text-align: center;
+    background-color: black;
+}
+
+.active{
+    color: #c2c23b;
+}
+.inactive{
+    
+    color: #ffff;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.border {
+    cursor: pointer; 
+    transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+.border.active {
+    color: #ffd700; 
+    transform: scale(1.2);
+}
+
+.border.inactive {
+    color: #ccc; 
+}
+
+.border:hover {
+    transform: scale(1.3); 
+}
